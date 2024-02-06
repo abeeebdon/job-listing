@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import data from './data.json'
-import Company from './Company'
+import CompanyDetails from './CompanyDetails'
+import CompanyRoles from './CompanyRoles'
 function App() {
   const [companies, setCompanies] = useState(data)
 
   return (
-    <div className="App">
-      <div className="container">
-        {companies.map((companie) => {
-          console.log(companie)
-          return <Company key={companie.id} companie={companie} />
-        })}
-      </div>
+    <div className="container">
+      {companies.map((companie) => {
+        return (
+          <section className="company">
+            <CompanyDetails companie={companie} />
+            <CompanyRoles companie={companie} />
+          </section>
+        )
+      })}
     </div>
   )
 }

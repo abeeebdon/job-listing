@@ -1,7 +1,7 @@
 const CompanyRoles = ({ companie }) => {
   const { level, role, languages } = companie
   return (
-    <article className="role">
+    <article className="company-role">
       <p>{level}</p>
       <p>{role}</p>
 

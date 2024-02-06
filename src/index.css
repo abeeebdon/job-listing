@@ -19,11 +19,6 @@ body {
   --vdark-gray: hsl(180, 14%, 20%);
 }
 
-.App {
-  width: 100%;
-  background-color: var(--light-gray);
-}
-
 .container {
   width: 100%;
   max-width: 960px;
@@ -37,7 +32,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   margin: 1rem;
   padding: 0.3rem 1rem;
   margin: 0 auto;
@@ -46,35 +40,29 @@ body {
 .company-details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   line-height: 0.8rem;
   margin: 0;
   padding: 0;
   gap: 1rem;
 }
 
-/* .company-detail {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-} */
 .contract {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-.role {
-  flex-shrink: 2;
+.company-role {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
   padding: 1rem;
   text-align: left;
   margin: 1rem;
-  width: 350px;
   flex-wrap: wrap;
 }
 
-.role p {
+.company-role p {
   margin: 0.5rem;
   padding: 0.2rem;
   border: none;
