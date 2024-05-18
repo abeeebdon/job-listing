@@ -21,27 +21,36 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
-  padding: 1rem;
-  margin: 0 auto;
   background-color: var(--light-gray);
 }
-
+.header {
+  background-image: url('./images/bg-header-desktop.svg');
+  background-color: var(--dark-cyan);
+  padding: 0.3rem 1rem;
+  background-size: cover;
+  height: 15vh;
+  width: 100%;
+  max-width: 960px;
+  margin: 1rem auto;
+  margin-top: 0px;
+}
 .company {
+  width: 100%;
+  max-width: 960px;
+  margin: 1rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
   padding: 0.3rem 1rem;
-  margin: 0 auto;
+  background-color: white;
+  cursor: pointer;
 }
 
 .company-details {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  line-height: 0.8rem;
   margin: 0;
   padding: 0;
   gap: 1rem;
@@ -51,6 +60,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin: 0.2rem 0px;
 }
 .company-role {
   display: flex;

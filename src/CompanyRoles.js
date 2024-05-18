@@ -6,7 +6,7 @@ const CompanyRoles = ({ companie }) => {
       <p>{role}</p>
 
       {languages.map((lang) => {
-        return <p>{lang}</p>
+        return <p key={lang}>{lang}</p>
       })}
     </article>
   )

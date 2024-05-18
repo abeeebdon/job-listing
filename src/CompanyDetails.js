@@ -6,12 +6,8 @@ const CompanyDetails = ({ companie }) => {
         <img src={logo} alt={company} />
       </div>
       <div className="company-detail">
-        <div>
-          <span>{company}</span>
-        </div>
-        <div>
-          <h5>{position}</h5>
-        </div>
+        <span>{company}</span>
+        <p style={{ fontWeight: 'bold', margin: '0.4rem 0px' }}>{position}</p>
         <div className="contract">
           <span>{postedAt}</span>
           <span>{contract}</span>
