@@ -84,26 +84,33 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+  #root {
+    width: 100%;
+  }
+  .header {
+    background-image: url('./images/bg-header-mobile.svg');
+    background-color: var(--dark-cyan);
+    padding: 0.3rem 1rem;
+    background-size: cover;
+  }
   .container {
     position: relative;
+    margin: 0;
   }
   .company {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90vw;
-    margin: 2rem 0.1rem;
+    margin: 3rem 0.1rem;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 2.5rem 1rem;
     padding-bottom: 1rem;
-    border: 1px solid red;
   }
   .image {
     position: absolute;
-    left: 5%;
-    bottom: 120%;
-    margin: 0 auto;
+    left: 0%;
+    bottom: 95%;
   }
   .company-details {
     position: relative;
@@ -112,16 +119,10 @@ body {
     text-align: left;
     margin: 0.5rem;
   }
-  .role {
+  .company-role {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0;
     margin: 0;
   }
-  /* .line {
-    line-height: 4rem;
-    color: red;
-    opacity: 5;
-    display: block;
-  } */
 }
